@@ -80,7 +80,7 @@ module.exports = function(pb) {
 
                 if(!passwordReset) {
                     passwordReset = {
-                        userId: user[pb.DAO.getIdField()].toString(),
+                        user_id: user[pb.DAO.getIdField()].toString(),
                         object_type: 'password_reset'
                     };
                 }
